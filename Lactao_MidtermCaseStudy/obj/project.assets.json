@@ -1,31 +1,57 @@
 {
   "version": 3,
   "targets": {
-    "net6.0-windows7.0": {}
+    "net6.0-windows7.0": {
+      "Microsoft.EntityFrameworkCore.Abstractions/7.0.8": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Microsoft.EntityFrameworkCore.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.EntityFrameworkCore.Abstractions.dll": {
+            "related": ".xml"
+          }
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Microsoft.EntityFrameworkCore.Abstractions/7.0.8": {
+      "sha512": "4+Kj43oGUHPneA/uZurt9Nj9NZt8PBV0vMI+iKOUhmHXQKCkRUzpJaRKIZ1QLy8LiEL5D3/AIRfclgokdJnINQ==",
+      "type": "package",
+      "path": "microsoft.entityframeworkcore.abstractions/7.0.8",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "lib/net6.0/Microsoft.EntityFrameworkCore.Abstractions.dll",
+        "lib/net6.0/Microsoft.EntityFrameworkCore.Abstractions.xml",
+        "microsoft.entityframeworkcore.abstractions.7.0.8.nupkg.sha512",
+        "microsoft.entityframeworkcore.abstractions.nuspec"
+      ]
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0-windows7.0": []
+    "net6.0-windows7.0": [
+      "Microsoft.EntityFrameworkCore.Abstractions >= 7.0.8"
+    ]
   },
   "packageFolders": {
-    "C:\\Users\\12032152\\.nuget\\packages\\": {},
-    "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Rae Lactao\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\12032152\\source\\repos\\Lactao_MidtermCaseStudy\\Lactao_MidtermCaseStudy\\Lactao_MidtermCaseStudy.csproj",
+      "projectUniqueName": "C:\\Users\\Rae Lactao\\source\\repos\\Lactao_MidtermCaseStudy\\Lactao_MidtermCaseStudy\\Lactao_MidtermCaseStudy.csproj",
       "projectName": "Lactao_MidtermCaseStudy",
-      "projectPath": "C:\\Users\\12032152\\source\\repos\\Lactao_MidtermCaseStudy\\Lactao_MidtermCaseStudy\\Lactao_MidtermCaseStudy.csproj",
-      "packagesPath": "C:\\Users\\12032152\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\12032152\\source\\repos\\Lactao_MidtermCaseStudy\\Lactao_MidtermCaseStudy\\obj\\",
+      "projectPath": "C:\\Users\\Rae Lactao\\source\\repos\\Lactao_MidtermCaseStudy\\Lactao_MidtermCaseStudy\\Lactao_MidtermCaseStudy.csproj",
+      "packagesPath": "C:\\Users\\Rae Lactao\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Rae Lactao\\source\\repos\\Lactao_MidtermCaseStudy\\Lactao_MidtermCaseStudy\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\12032152\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\Rae Lactao\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -33,7 +59,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -51,6 +76,12 @@
     "frameworks": {
       "net6.0-windows7.0": {
         "targetAlias": "net6.0-windows",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Abstractions": {
+            "target": "Package",
+            "version": "[7.0.8, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",
@@ -70,7 +101,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
       }
     }
   }

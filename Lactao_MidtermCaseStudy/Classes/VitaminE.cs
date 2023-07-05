@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lactao_MidtermCaseStudy.Classes
 {
-    public class VitaminE : VitaminSupplements
+    public class VitaminE : Product
     {
         private string name;
         private string type;

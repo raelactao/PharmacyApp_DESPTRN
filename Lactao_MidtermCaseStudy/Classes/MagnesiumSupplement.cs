@@ -1,25 +1,28 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace Lactao_MidtermCaseStudy.Classes
 {
-    public class VitaminC : Product
+    public class MagnesiumSupplement : Product
     {
         private string name;
         private string type;
         private string unit;
         private decimal price;
 
-        public VitaminC()
+        public MagnesiumSupplement()
         {
-            this.name = "Sodium ascorbate (Vit. C)";
-            this.type = "Vitamin";
-            this.unit = "1000 IU";
-            this.price = 15.00M;
+            this.name = "Magnesium Supplement";
+            this.type = "Mineral";
+            this.unit = "1000 mg";
+            this.price = 9.50M;
         }
+
         public override string Name => name;
 
         public override string Type => type;
@@ -27,6 +30,6 @@ namespace Lactao_MidtermCaseStudy.Classes
         public override string Unit => unit;
 
         public override decimal Price => price;
-
     }
+
 }

@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Lactao_MidtermCaseStudy.Classes
 {
-    public class VitaminFactory
+    public class Factory
     {
-        public static VitaminSupplements AddVitamin(string vitamin)
+        public static Product Add(string vitamin)
         {
             switch (vitamin)
             {
@@ -21,8 +21,17 @@ namespace Lactao_MidtermCaseStudy.Classes
                 case "multivitamins":
                     return new Multivitamins();
 
+                case "iron":
+                    return new IronSupplement();
+
+                case "calcium":
+                    return new CalciumSupplement();
+
+                case "magnesium":
+                    return new MagnesiumSupplement();
+
                 default:
-                    throw new Exception("Invalid Vitamin");
+                    throw new Exception("Invalid Product");
             }
         }
     }

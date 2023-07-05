@@ -6,20 +6,21 @@ using System.Threading.Tasks;
 
 namespace Lactao_MidtermCaseStudy.Classes
 {
-    public class VitaminC : Product
+    internal class CalciumSupplement : Product
     {
         private string name;
         private string type;
         private string unit;
         private decimal price;
 
-        public VitaminC()
+        public CalciumSupplement()
         {
-            this.name = "Sodium ascorbate (Vit. C)";
-            this.type = "Vitamin";
-            this.unit = "1000 IU";
-            this.price = 15.00M;
+            this.name = "Calcium Supplement";
+            this.type = "Mineral";
+            this.unit = "500 mg";
+            this.price = 8.25M;
         }
+
         public override string Name => name;
 
         public override string Type => type;
@@ -27,6 +28,5 @@ namespace Lactao_MidtermCaseStudy.Classes
         public override string Unit => unit;
 
         public override decimal Price => price;
-
     }
 }

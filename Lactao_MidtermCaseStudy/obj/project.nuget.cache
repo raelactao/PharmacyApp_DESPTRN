@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "M/8ulWyGzjzauhlJuHuKfI/AR/kSgbNmKwecIWypdkY4bhmvbZdw6ICkD6ALTCdwX96ALW/uze9gzCXFvwmgPg==",
+  "dgSpecHash": "7mtYcM4x8Xv8j3R71VO0IWGbUt0a/0H+Ff/h8PG7uF3TnsAoZfFQiilIh/h+nZy28nLqFKz+rC9NjIQtMrVh8g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\12032152\\source\\repos\\Lactao_MidtermCaseStudy\\Lactao_MidtermCaseStudy\\Lactao_MidtermCaseStudy.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Rae Lactao\\source\\repos\\Lactao_MidtermCaseStudy\\Lactao_MidtermCaseStudy\\Lactao_MidtermCaseStudy.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Rae Lactao\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.8\\microsoft.entityframeworkcore.abstractions.7.0.8.nupkg.sha512"
+  ],
   "logs": []
 }

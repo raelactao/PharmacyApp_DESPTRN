@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\12032152\\source\\repos\\Lactao_MidtermCaseStudy\\Lactao_MidtermCaseStudy\\Lactao_MidtermCaseStudy.csproj": {}
+    "C:\\Users\\Rae Lactao\\source\\repos\\Lactao_MidtermCaseStudy\\Lactao_MidtermCaseStudy\\Lactao_MidtermCaseStudy.csproj": {}
   },
   "projects": {
-    "C:\\Users\\12032152\\source\\repos\\Lactao_MidtermCaseStudy\\Lactao_MidtermCaseStudy\\Lactao_MidtermCaseStudy.csproj": {
+    "C:\\Users\\Rae Lactao\\source\\repos\\Lactao_MidtermCaseStudy\\Lactao_MidtermCaseStudy\\Lactao_MidtermCaseStudy.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\12032152\\source\\repos\\Lactao_MidtermCaseStudy\\Lactao_MidtermCaseStudy\\Lactao_MidtermCaseStudy.csproj",
+        "projectUniqueName": "C:\\Users\\Rae Lactao\\source\\repos\\Lactao_MidtermCaseStudy\\Lactao_MidtermCaseStudy\\Lactao_MidtermCaseStudy.csproj",
         "projectName": "Lactao_MidtermCaseStudy",
-        "projectPath": "C:\\Users\\12032152\\source\\repos\\Lactao_MidtermCaseStudy\\Lactao_MidtermCaseStudy\\Lactao_MidtermCaseStudy.csproj",
-        "packagesPath": "C:\\Users\\12032152\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\12032152\\source\\repos\\Lactao_MidtermCaseStudy\\Lactao_MidtermCaseStudy\\obj\\",
+        "projectPath": "C:\\Users\\Rae Lactao\\source\\repos\\Lactao_MidtermCaseStudy\\Lactao_MidtermCaseStudy\\Lactao_MidtermCaseStudy.csproj",
+        "packagesPath": "C:\\Users\\Rae Lactao\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Rae Lactao\\source\\repos\\Lactao_MidtermCaseStudy\\Lactao_MidtermCaseStudy\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\12032152\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Rae Lactao\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -44,6 +39,12 @@
       "frameworks": {
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Abstractions": {
+              "target": "Package",
+              "version": "[7.0.8, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -63,7 +64,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }
