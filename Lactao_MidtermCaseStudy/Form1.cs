@@ -21,9 +21,7 @@ namespace Lactao_MidtermCaseStudy
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            //BindingList<Order> bs = new BindingList<Order>(shoppingCart.Orders);
             orderBindingSource.DataSource = shoppingCart.Orders;
-            //orderBindingSource.DataSource = bs;
         }
 
         private void btnProductSelect_Click(object sender, EventArgs e)
@@ -50,8 +48,6 @@ namespace Lactao_MidtermCaseStudy
                 decimal amount = inputQty.Value * prod.Price;
                 txtTotal.Text = amount.ToString();
             }
-
-            
         }
 
         private void btnSubmit_Click(object sender, EventArgs e)
@@ -78,16 +74,20 @@ namespace Lactao_MidtermCaseStudy
             if (orderFromCart != null)
             {
                 Product? prodFromOrder = GetProduct(name);
-                txt1Lbl.Text = prodFromOrder.Name;
-                txt2lbl.Text = prodFromOrder.Type;
-                txt3Lbl.Text = prodFromOrder.Unit;
-                txt4Lbl.Text = prodFromOrder.Price.ToString();
-                inputQty.Value = (int)row.Cells[2].Value;
-                txtTotal.Text = row.Cells[4].Value.ToString();
+                if (prodFromOrder != null)
+                {
+                    txt1Lbl.Text = prodFromOrder.Name;
+                    txt2lbl.Text = prodFromOrder.Type;
+                    txt3Lbl.Text = prodFromOrder.Unit;
+                    txt4Lbl.Text = prodFromOrder.Price.ToString();
+                    inputQty.Value = (int)row.Cells[2].Value;
+                    txtTotal.Text = row.Cells[4].Value.ToString();
 
-                delIndex = shoppingCart.Orders.IndexOf(orderFromCart);
+                    delIndex = shoppingCart.Orders.IndexOf(orderFromCart);
 
-                SelectProdByName(name);
+                    SelectProdByName(name);
+                }
+
             }
 
 

@@ -15,7 +15,7 @@ namespace Lactao_MidtermCaseStudy.Classes
         //private decimal _amount;
 
         public int OrderId { get; set; }
-        public string Name { get; set; }
+        public string? Name { get; set; }
 
         public int Quantity { get; set; }
         //public int Quantity 
@@ -27,7 +27,7 @@ namespace Lactao_MidtermCaseStudy.Classes
         //        OnPropertyChanged("Quantity");
         //    } 
         //}
-        public string Unit { get; set; }
+        public string? Unit { get; set; }
 
         public decimal Amount { get; set; }
 
