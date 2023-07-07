@@ -210,6 +210,7 @@
             // dgvShopCart
             // 
             this.dgvShopCart.AllowUserToAddRows = false;
+            this.dgvShopCart.AllowUserToDeleteRows = false;
             this.dgvShopCart.AutoGenerateColumns = false;
             this.dgvShopCart.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvShopCart.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -222,6 +223,7 @@
             this.dgvShopCart.DataSource = this.orderBindingSource;
             this.dgvShopCart.Location = new System.Drawing.Point(771, 169);
             this.dgvShopCart.Name = "dgvShopCart";
+            this.dgvShopCart.ReadOnly = true;
             this.dgvShopCart.RowHeadersWidth = 82;
             this.dgvShopCart.RowTemplate.Height = 41;
             this.dgvShopCart.Size = new System.Drawing.Size(652, 725);
@@ -363,6 +365,7 @@
             this.orderIdDataGridViewTextBoxColumn.MinimumWidth = 10;
             this.orderIdDataGridViewTextBoxColumn.Name = "orderIdDataGridViewTextBoxColumn";
             this.orderIdDataGridViewTextBoxColumn.ReadOnly = true;
+            this.orderIdDataGridViewTextBoxColumn.Visible = false;
             // 
             // nameDataGridViewTextBoxColumn
             // 

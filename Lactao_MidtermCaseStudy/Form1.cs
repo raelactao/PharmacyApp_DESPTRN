@@ -21,7 +21,9 @@ namespace Lactao_MidtermCaseStudy
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            orderBindingSource.DataSource = shoppingCart.Orders;           
+            //BindingList<Order> bs = new BindingList<Order>(shoppingCart.Orders);
+            orderBindingSource.DataSource = shoppingCart.Orders;
+            //orderBindingSource.DataSource = bs;
         }
 
         private void btnProductSelect_Click(object sender, EventArgs e)

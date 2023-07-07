@@ -44,11 +44,10 @@ namespace Lactao_MidtermCaseStudy.Classes
                     Amount = amount
                 });
 
-                total += amount;
             }
             else
             {
-                int checkId = check.OrderId;
+                int checkId = Orders.IndexOf(check);
                 int newQty = check.Quantity + qty;
                 amount = newQty * prod.Price;
                 DeleteItem(checkId);
@@ -62,9 +61,10 @@ namespace Lactao_MidtermCaseStudy.Classes
                     Amount = amount
                 });
 
-                total += amount;
             }
-            
+
+            total += amount;
+
         }
 
         public void DeleteItem(int index)
